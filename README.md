@@ -55,3 +55,31 @@ graph TD
     
     E --> H
     I --> J[Telegram Bot API Alert Dispatch]
+```
+## 🖼 Real-World Hardware & Field Testing
+
+| Local Edge Hardware Testbed | Real-Time Safe-Zone Tracking |
+| :---: | :---: |
+| ![Hardware Setup](docs/assets/hardware_setup.jpg) | ![YOLO Tracking](docs/assets/yolo_tracking.png) |
+| *Figure 2: Edge hardware configuration running local analytics with a USB camera source.* | *Figure 3: Active target detection with bounding box classification and custom polygon zone overlays.* |
+
+---
+
+## 🚀 Quickstart & Setup Guide
+
+### 1. Prerequisites
+* **Python 3.10+** installed on the host system.
+* **NVIDIA Drivers & CUDA Toolkit** (Required for GPU inference; defaults to CPU execution if CUDA is unavailable).
+
+  # Clone repository
+git clone [https://github.com/your-username/IBVAP.git](https://github.com/your-username/IBVAP.git)
+cd IBVAP
+
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+# Install dependencies
+pip install --upgrade pip
+pip install -r requirements.txt
+
