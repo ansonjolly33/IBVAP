@@ -1,4 +1,4 @@
-# IBVAP: Integrated Border & Perimeter Video Analytics Platform
+# IBVAP: Intelligent Border Video Analytics Platform
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -15,7 +15,7 @@
 ## 📌 About the Project
 
 ### System Overview
-**IBVAP (Integrated Border & Perimeter Video Analytics Platform)** is an edge-native surveillance and perimeter monitoring prototype designed to automate intrusion detection and contextual threat assessment in real time. Traditional CCTV systems often depend on continuous manual monitoring, which can increase operator workload during prolonged surveillance. IBVAP addresses this by combining local computer vision inference with a contextual risk-scoring engine that evaluates and prioritizes security-relevant events before generating alerts.
+**IBVAP (Intelligent Border Video Analytics Platform)** is an edge-native surveillance and perimeter monitoring prototype designed to automate intrusion detection and contextual threat assessment in real time. Traditional CCTV systems often depend on continuous manual monitoring, which can increase operator workload during prolonged surveillance. IBVAP addresses this by combining local computer vision inference with a contextual risk-scoring engine that evaluates and prioritizes security-relevant events before generating alerts.
 
 The platform performs primary AI-based detection locally using GPU-accelerated processing, reducing dependence on cloud-based inference and supporting low-latency video analytics. When a configured threat condition is detected, IBVAP asynchronously dispatches Telegram notifications containing event information and snapshots, enabling security personnel to receive alerts without continuously monitoring the dashboard.
 
