@@ -1,10 +1,12 @@
 # IBVAP: Integrated Border & Perimeter Video Analytics Platform
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![NVIDIA CUDA](https://img.shields.io/badge/CUDA-Accelerated-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-toolkit)
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00FFFF?style=for-the-badge)](https://docs.ultralytics.com/)
 [![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-Haar%20Cascades-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
 
 > **IBVAP** is an edge-native video analytics prototype engineered for real-time perimeter monitoring, user-defined safe-zone tracking, dynamic contextual threat scoring, license plate region processing (ANPR), and asynchronous emergency alerts.
 
@@ -13,26 +15,27 @@
 ## 📌 About the Project
 
 ### System Overview
-**IBVAP (Integrated Border & Perimeter Video Analytics Platform)** is an edge-native surveillance and perimeter monitoring prototype engineered to automate intrusion detection and threat assessment in real time. Traditional surveillance setups rely heavily on continuous manual monitoring by operators, leading to screen fatigue and delayed response times during breach events. IBVAP addresses this operational bottleneck by combining local computer vision inference with an automated contextual risk-scoring matrix that evaluates and prioritizes suspicious events before alerting personnel.
+**IBVAP (Integrated Border & Perimeter Video Analytics Platform)** is an edge-native surveillance and perimeter monitoring prototype designed to automate intrusion detection and contextual threat assessment in real time. Traditional CCTV systems often depend on continuous manual monitoring, which can increase operator workload during prolonged surveillance. IBVAP addresses this by combining local computer vision inference with a contextual risk-scoring engine that evaluates and prioritizes security-relevant events before generating alerts.
 
-By executing primary AI detection locally on edge GPU hardware, the platform minimizes external cloud processing requirements and ensures low-latency target tracking. When a critical zone breach occurs, IBVAP triggers asynchronous remote notifications via Telegram, ensuring security teams receive real-time breach telemetry and high-resolution event snapshots even when away from control room monitors.
+The platform performs primary AI-based detection locally using GPU-accelerated processing, reducing dependence on cloud-based inference and supporting low-latency video analytics. When a configured threat condition is detected, IBVAP asynchronously dispatches Telegram notifications containing event information and snapshots, enabling security personnel to receive alerts without continuously monitoring the dashboard.
+
 
 ---
 
 ### Key Capabilities & System Focus
 
-* **Local Edge Analytics:** Performs primary object detection (detecting targets like persons and vehicles) locally on edge hardware using YOLOv8 with CUDA acceleration support.
-* **Dynamic Operator-Defined Safe Zones:** Enables operators to draw and adjust interactive multi-point polygon boundaries directly over live RTSP or camera video feeds through a web UI.
-* **Contextual Threat Matrix:** Evaluates intrusion events using a 0–100 heuristic risk scale based on target class, dwell time, movement parameters, and zone severity to filter out routine non-threat events.
-* **Automated ANPR Integration:** Processes vehicle region-of-interest (ROI) crops using OpenCV and EasyOCR to extract and log license plate numbers during perimeter events.
-* **Asynchronous Multi-Channel Alerts:** Utilizes a non-blocking background worker thread to dispatch immediate breach notifications and image snapshots via Telegram without interrupting the main video stream capture loop.
-* **Unified Command Dashboard:** Provides a centralized, Flask-based browser interface displaying active camera feeds, status indicators, live analytics, and breach snapshot history.
+* **Local Edge Analytics:** Performs local person and vehicle detection using **YOLOv8** with CUDA-accelerated processing.
+* **Dynamic Safe Zones:** Enables operators to create and modify polygon-based restricted zones directly on live video through the web interface.
+* **Contextual Threat Matrix:** Evaluates security events using a **0–100 risk scale** based on target class, dwell time, movement, and zone severity.
+* **Automated ANPR:** Processes vehicle regions using **OpenCV + EasyOCR** to extract and log license plate information.
+* **Asynchronous Alerts:** Uses a background worker to send **Telegram notifications with event snapshots** without blocking the video-processing pipeline.
+* **Unified Dashboard:** Provides a **Flask-based web interface** for live video monitoring, zone configuration, analytics, and event information.
 
 ---
 
 ## 📸 System Overview
 
-![IBVAP Live Dashboard](docs/assets/dashboard_overview.png)
+![IBVAP Live Dashboard](IBVAP%20images/IBVAP%20dashboard.png)
 *Figure 1: IBVAP Monitoring Command Dashboard displaying live camera stream, zone boundary overlays, and real-time threat telemetry.*
 
 ---
@@ -58,9 +61,9 @@ graph TD
 ```
 ## 🖼 Real-World Hardware & Field Testing
 
-| Local Edge Hardware Testbed | Real-Time Safe-Zone Tracking |
+| Local Edge Hardware Testbed | Real-Time Threat & Zone Tracking |
 | :---: | :---: |
-| ![Hardware Setup](docs/assets/hardware_setup.jpg) | ![YOLO Tracking](docs/assets/yolo_tracking.png) |
+| ![Hardware Setup](IBVAP%20images/System%20Setup.jpeg) | ![YOLO Tracking](IBVAP%20images/Threat%20Alert.jpeg) |
 | *Figure 2: Edge hardware configuration running local analytics with a USB camera source.* | *Figure 3: Active target detection with bounding box classification and custom polygon zone overlays.* |
 
 ---
@@ -72,7 +75,7 @@ graph TD
 * **NVIDIA Drivers & CUDA Toolkit** (Required for GPU inference; defaults to CPU execution if CUDA is unavailable).
 
   # Clone repository
-git clone [https://github.com/your-username/IBVAP.git](https://github.com/your-username/IBVAP.git)
+git clone [https://github.com/your-username/IBVAP.git](https://github.com/ansonjolly33/IBVAP.git)
 cd IBVAP
 
 # Create and activate virtual environment
