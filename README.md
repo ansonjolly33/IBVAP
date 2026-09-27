@@ -75,7 +75,7 @@ graph TD
 * **NVIDIA Drivers & CUDA Toolkit** (Required for GPU inference; defaults to CPU execution if CUDA is unavailable).
 
   # Clone repository
-git clone [https://github.com/your-username/IBVAP.git](https://github.com/ansonjolly33/IBVAP.git)
+git clone [https://github.com/ansonjolly33/IBVAP.git](https://github.com/ansonjolly33/IBVAP.git)
 cd IBVAP
 
 # Create and activate virtual environment
