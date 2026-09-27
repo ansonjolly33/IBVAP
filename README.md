@@ -90,5 +90,46 @@ Start the IBVAP platform execution loop:
 ```bash
 python app.py
 
+```
+## 📁 Repository Structure
+
+```text
+IBVAP/
+├── IBVAP images/                 # Documentation screenshots and UI assets
+├── __pycache__/                  # Python compiled bytecode cache
+├── security_logs/                # Generated system event logs
+├── static/
+│   └── breaches/                 # Captured breach snapshot images
+├── telegram_alerts/              # Dispatched alert records
+├── templates/                    # Web UI HTML templates
+├── .env.example                  # Environment configuration template
+├── .gitignore                    # Git tracking exclusion configuration
+├── README.md                     # Primary repository documentation
+├── anpr_engine.py                # License plate processing submodule
+├── app.py                        # Main Flask server & application entry point
+├── frs_anpr_module.py            # Facial recognition & ANPR integration module
+├── haarcascade_frontalface_default.xml # Haar Cascade face detection classifier
+├── main.py                       # Standalone engine execution script
+├── mudule1_virtual_fence.py      # Core virtual fence & zone management logic
+├── module4_event_logger.py       # Event logging utility module
+├── module5_alarm_fence.py        # Alarm trigger and breach handler
+├── module6_loitering_capture.py  # Dwell time and loitering analysis module
+├── module7_telegram_alerts.py    # Asynchronous Telegram alert integration
+├── test_alert.ipy                # Alert system Jupyter testing notebook
+├── test_telegram.py              # Telegram API verification script
+├── virtual_fence.py              # Polygon spatial math utilities
+└── yolov8n.pt                    # Pre-trained YOLOv8 nano weights model
+```
+## 📜 Compliance & Guidelines Alignment
+
+* **MHA PIDS Guidelines:** Aligned with Ministry of Home Affairs Qualitative Requirements for Perimeter Intrusion Detection Systems.
+* **ONVIF Framework:** Aligned with industry standards for IP security camera streaming protocols (RTSP/RTP) and camera interoperability.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
 
 
