@@ -42,34 +42,37 @@ The architecture is designed to extend these capabilities toward multi-camera ve
 This section showcases the functional prototype and user interface components of the Urban Traffic Analytics Engine.
 
 ### 1. Command & Control Dashboard
-![UTAE Command Dashboard](UTAE%20images/dashboard.png)
-*Centralized interface displaying processed live camera feeds, detected vehicle telemetry, spatial monitoring zones, and immediate status logging.*
+<img src="UTAE%20images/dashboard.png" alt="UTAE Command Dashboard" width="600">
 
+*Centralized interface displaying processed live camera feeds, detected vehicle telemetry, spatial monitoring zones, and immediate status logging.*
 
 ---
 
 ### 2. Hardware & Multi-Monitor System Setup
-![UTAE System Setup](UTAE%20images/System%20Setup.png)
+<img src="UTAE%20images/System%20Setup.jpeg" alt="UTAE System Setup" width="600">
+
 *Physical multi-camera monitoring console and developer workspace executing CUDA-accelerated model inferences in real time.*
 
 ---
 
 ### 3. Hardware Execution & Dual-Display Prototype
-![UTAE Hardware Prototype Interface](UTAE%20images/prototype.jpeg)
+<img src="UTAE%20images/prototype.jpeg" alt="UTAE Hardware Prototype Interface" width="600">
+
 *Dual-display execution environment running concurrent AI video streams alongside real-time tracking logs.*
 
 ---
 
 ### 4. Automated Threat & Incident Alerts
-![UTAE Threat Alert Interface](UTAE%20images/Threat%20Alert.jpeg)
+<img src="UTAE%20images/Threat%20Alert.jpeg" alt="UTAE Threat Alert Interface" width="600">
+
 *Real-time threat detection interface triggering immediate visual alerts and telemetry extraction for flagged vehicle incidents.*
 
 ---
 
 ### 5. Evidence & Snapshot Generation
-![UTAE Evidence Output](UTAE%20images/snapshots.jpeg)
-*Automated audit and evidence collection module capturing incident snapshots, optical character recognition logs, and timestamped metadata.*
+<img src="UTAE%20images/snapshots.jpeg" alt="UTAE Evidence Output" width="600">
 
+*Automated audit and evidence collection module capturing incident snapshots, optical character recognition logs, and timestamped metadata.*
 
 ---
 
