@@ -45,33 +45,28 @@ This section showcases the functional prototype and user interface components of
 ![UTAE Command Dashboard](UTAE%20images/dashboard.png)
 *Centralized interface displaying processed live camera feeds, detected vehicle telemetry, spatial monitoring zones, and immediate status logging.*
 
----
-
-### 2. Central Analytics & Traffic Monitoring UI
-![UTAE Main Dashboard View](UTAE%20images/UTAE%20dashboard.png)
-*Unified traffic analytics overview showcasing real-time vehicle counts, zone activity, spatial bounding metrics, and ANPR feed integration.*
 
 ---
 
-### 3. Hardware & Multi-Monitor System Setup
+### 2. Hardware & Multi-Monitor System Setup
 ![UTAE System Setup](UTAE%20images/System%20Setup.png)
 *Physical multi-camera monitoring console and developer workspace executing CUDA-accelerated model inferences in real time.*
 
 ---
 
-### 4. Hardware Execution & Dual-Display Prototype
+### 3. Hardware Execution & Dual-Display Prototype
 ![UTAE Hardware Prototype Interface](UTAE%20images/prototype.png)
 *Dual-display execution environment running concurrent AI video streams alongside real-time tracking logs.*
 
 ---
 
-### 5. Automated Threat & Incident Alerts
+### 4. Automated Threat & Incident Alerts
 ![UTAE Threat Alert Interface](UTAE%20images/Threat%20Alert.png)
 *Real-time threat detection interface triggering immediate visual alerts and telemetry extraction for flagged vehicle incidents.*
 
 ---
 
-### 6. Evidence & Snapshot Generation
+### 5. Evidence & Snapshot Generation
 ![UTAE Evidence Output](UTAE%20images/snapshots.png)
 *Automated audit and evidence collection module capturing incident snapshots, optical character recognition logs, and timestamped metadata.*
 
