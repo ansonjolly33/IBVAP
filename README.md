@@ -55,19 +55,19 @@ This section showcases the functional prototype and user interface components of
 ---
 
 ### 3. Hardware Execution & Dual-Display Prototype
-![UTAE Hardware Prototype Interface](UTAE%20images/prototype.png)
+![UTAE Hardware Prototype Interface](UTAE%20images/prototype.jpeg)
 *Dual-display execution environment running concurrent AI video streams alongside real-time tracking logs.*
 
 ---
 
 ### 4. Automated Threat & Incident Alerts
-![UTAE Threat Alert Interface](UTAE%20images/Threat%20Alert.png)
+![UTAE Threat Alert Interface](UTAE%20images/Threat%20Alert.jpeg)
 *Real-time threat detection interface triggering immediate visual alerts and telemetry extraction for flagged vehicle incidents.*
 
 ---
 
 ### 5. Evidence & Snapshot Generation
-![UTAE Evidence Output](UTAE%20images/snapshots.png)
+![UTAE Evidence Output](UTAE%20images/snapshots.jpeg)
 *Automated audit and evidence collection module capturing incident snapshots, optical character recognition logs, and timestamped metadata.*
 
 
