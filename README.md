@@ -91,7 +91,7 @@ graph TD
 ### 🏗️ Platform Architecture
 The current prototype architecture consists of:
 
-1. Data Source
+## 1. Data Source
 Supported video sources provide:
 
 CCTV / IP camera streams
@@ -100,7 +100,7 @@ Video input
 
 Vehicle activity
 
-2. Video Processing
+## 2. Video Processing
 Live video stream
 
 Frame extraction
@@ -109,7 +109,7 @@ Image processing
 
 Camera-wise processing
 
-3. AI Detection & Tracking
+## 3. AI Detection & Tracking
 The prototype uses:
 
 YOLOv8 vehicle detection
@@ -122,7 +122,7 @@ OpenCV-based video processing
 
 GPU-accelerated inference where CUDA is available
 
-4. ANPR / OCR
+## 4. ANPR / OCR
 The number-plate processing pipeline uses:
 
 Vehicle region extraction
@@ -133,7 +133,7 @@ EasyOCR
 
 Extracted plate text
 
-5. Spatial & Event Analysis
+## 5. Spatial & Event Analysis
 The prototype supports:
 
 Polygon-based monitoring zones
@@ -144,7 +144,7 @@ Configured event conditions
 
 Risk information
 
-6. Alert & Evidence Generation
+## 6. Alert & Evidence Generation
 The system can generate:
 
 Incident snapshots
@@ -155,7 +155,7 @@ Risk information
 
 Telegram notifications
 
-7. Command Dashboard
+## 7. Command Dashboard
 The Flask dashboard provides:
 
 Live video monitoring
@@ -175,19 +175,19 @@ Event visualization
 ### 🖥️ Prototype
 The following sections represent the working prototype and its demonstrated functionality.
 
-Command & Control Dashboard
+>Command & Control Dashboard
 The dashboard provides a centralized interface for viewing the processed video stream, detected vehicles, monitoring zones, event information, and associated telemetry.
 
-Centralized Analytics UI
+>Centralized Analytics UI
 Unified view showing real-time traffic statistics, spatial zones, and live detection feeds.
 
-Hardware & System Execution Prototype
+>Hardware & System Execution Prototype
 Multi-monitor setup showing real-time processing execution and live feed analytics.
 
-Real-Time Threat Alerts
+>Real-Time Threat Alerts
 Configured incidents generate instant threat alerts with risk telemetry and evidence snapshots.
 
-Evidence & Event Output
+>Evidence & Event Output
 The prototype generates supporting event records including captured snapshots, vehicle details, plate information, and risk alerts.
 
 Note: Screenshots in this repository represent the project's working prototype/demo.
