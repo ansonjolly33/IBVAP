@@ -167,6 +167,8 @@ Risk information
 
 Event visualization
 
+
+
 ### 🖥️ Prototype
 The following sections represent the working prototype and its demonstrated functionality.
 
@@ -202,6 +204,8 @@ The prototype combines multiple computer-vision components to convert video stre
 | **Risk Information** | Provides contextual information for detected events |
 | **Alert Generation** | Sends notifications for configured incidents |
 | **Evidence Capture** | Preserves incident snapshots |
+
+
 
 ## 🔎 Automatic Number Plate Recognition
 
